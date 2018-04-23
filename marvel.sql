@@ -59,6 +59,7 @@ INSERT INTO movies (title, year, show_time) VALUES ('Avengers: Age of Ultron', 2
 INSERT INTO movies (title, year, show_time) VALUES ('Ant-Man', 2015, '13:50');
 INSERT INTO movies (title, year, show_time) VALUES ('Captain America: Civil War', 2016, '21:30');
 INSERT INTO movies (title, year, show_time) VALUES ('Doctor Strange', 2016, '17:55');
+INSERT INTO movies (title, year, show_time) VALUES ('Guardians of the Galaxy 2', 2018, '20:00');
 
 INSERT INTO attendances (person_id, movie_id) VALUES (2, 13);
 INSERT INTO attendances (person_id, movie_id) VALUES (22, 7);
@@ -151,4 +152,16 @@ INSERT INTO attendances (person_id, movie_id) VALUES (1, 1);
 INSERT INTO attendances (person_id, movie_id) VALUES (21, 4);
 
 SELECT * FROM movies;
+UPDATE people SET name = 'Davina Sanders' WHERE name = 'Davinda Sanders';
 SELECT name FROM people;
+SELECT name FROM people WHERE name = 'Sarah Murphy';
+DELETE FROM movies WHERE title = 'Batman Begins';
+INSERT INTO people (name) VALUES ('New Person');
+DELETE FROM people WHERE name = 'Zsolt Podoba-Szalai';
+UPDATE people SET name = 'Jeff 4' WHERE id = 7;
+UPDATE people SET name = 'Jeff 5' WHERE id = 22;
+INSERT INTO movies (title, year, show_time) VALUES ('Guardians of the Galaxy', 2014, '18:55');
+UPDATE movies SET show_time = '18:55' WHERE title = 'Guardians of the Galaxy';
+
+SELECT * FROM movies;
+SELECT * FROM people;
